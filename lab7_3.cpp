@@ -17,3 +17,11 @@ int main(){
 	cout << before('c') << "\n";
 	return 0;
 }
+
+char before(char x){
+    if(x<'A'||x>'Z')
+    return '0';
+    if(x=='A')
+    return 'Z';
+    return x-1;
+}
